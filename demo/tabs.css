@@ -1,0 +1,158 @@
+﻿.tab {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0px 0px -20px;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.tab > * {
+    flex: none;
+    position: relative;
+    z-index: 100;
+}
+
+.tab > li{margin:0px;}
+
+.tab li:not(:first-child) {
+  margin-left:-4px
+}
+
+.tab li.active {z-index: 200;}
+
+.tab :first-child {
+    padding-left: 20px;
+}
+
+.tab > * > a,
+.tab > * > a:link,
+.tab > * > a:visited {
+    display: block;
+    text-align: center;
+    padding: 9px 25px;
+    color: #555;
+    border-bottom: 2px solid transparent;
+    border-bottom-color: transparent;
+    font-size: 80%;
+    text-transform: uppercase;
+    transition: color .1s ease-in-out;
+    line-height: 20px;
+    background-color: #efefef;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.tab > * > a:hover {
+    background-color: #ccc;
+}
+
+.tab > .active > a {
+    color: #222;
+    border-color: #ffdd2d;
+    background-color:#f2cc45;
+    font-weight: bold;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.tab > li > a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul.tab {
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+ul.tab-content {
+    padding-left: 15px;
+    margin-top: 0px;
+}
+
+ul.tab-content {
+   margin: 0px;
+   background-color: #f5f6fa;
+   overflow-y: auto;
+   border-radius: 0px 0px 4px 4px;
+   border: 1px solid #f2cc45;
+   padding: 15px;
+}
+
+.tab-content > li {
+    display: none;
+    margin-top: 0px;
+}
+
+.tab-content > li .highlight {
+    margin-top: 0px;
+}
+
+.tab-content > li.active {
+    display: initial;
+}
+
+ul.tab-content > li::before,
+ul.tab > li::before {
+    content: "";
+    margin-left: 0px;
+}
+
+ul.tab-content > li pre {
+   margin: 0px;
+}
+
+.tab-content code {
+  border: 0px;
+} 
+
+.tab-block {
+  width:100%;
+}
+
+.tab-hide {
+  display: none
+}
+
+
+
+
+
+
+
+
+
+.main-content .btn,
+.main-content .btn:visited {
+  background: #f1f2f6;
+  padding: 0px 40px 0px 40px;
+  border-radius: 50px;
+  color: #6b7a86;
+  box-shadow: 0 0 0;
+  line-height: 46px;
+  font-weight: 400;
+}
+
+.main-content .btn-small {
+  line-height: 26px;
+  padding: 0px 10px 0px 10px;
+  margin: 10px;
+}
+
+.main-content .btn:hover,
+.main-content .btn-primary:hover {
+  background: #f2cc45;
+  color: #353F47;
+}
+
+.main-content .btn:active,
+.main-content .btn-primary:active {
+  background: #e9c442;
+}
+
+.main-content .btn-primary,
+.main-content .btn-primary:active,
+.main-content .btn-primary:visited {
+  background: #f9d247;
+  box-shadow: 0 0 0;
+  font-weight: 500;
+}

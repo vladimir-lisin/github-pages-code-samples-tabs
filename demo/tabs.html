@@ -1,0 +1,52 @@
+﻿<html>
+  <head>
+    <script src="tabs.js"></script>
+    <link rel="stylesheet" href="tabs.css" />
+  </head>
+<body>
+
+<p><strong>In your markdown file:</strong></p>
+<pre style="background-color:#efefef;padding:15px;border-radius:6px;border:1px solid #ccc;">
+{: .tab-title .tabgroup-test .tab-hide }
+🌐 Tab title #1
+
+{: .tab-content .tabgroup-test .tab-hide }
+```
+Test content for tab #1
+```
+
+{: .tab-title .tabgroup-test .tab-hide }
+🌐 Tab title #2
+
+{: .tab-content .tabgroup-test .tab-hide }
+```
+Test content for tab #2
+```
+
+{: .tab-title .tabgroup-test .tab-hide }
+🌐 Tab title #3
+
+{: .tab-content .tabgroup-test .tab-hide }
+```
+Test content for tab #3
+```
+</pre>
+
+<p><strong>We need markdown to produce such code:</strong></p>
+<div class="main-content">
+  <p class="tab-title tabgroup-test">🌐 Tab title #1</p>
+  <p class="tab-title tabgroup-test">🌐 Tab title #2</p>
+  <p class="tab-title tabgroup-test">🌐 Tab title #3</p>
+  <div class="tab-content tabgroup-test">
+    <pre>Test content for tab #1</pre>
+  </div>
+  <div class="tab-content tabgroup-test">
+    <pre>Test content for tab #2</pre>
+  </div>
+  <div class="tab-content tabgroup-test">
+    <pre>Test content for tab #3</pre>
+  </div>
+</div>
+
+</body>
+</html>
